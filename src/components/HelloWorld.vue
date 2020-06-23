@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <BVButton msg="SEARCH" user="Josue"/>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,8 +32,13 @@
 </template>
 
 <script>
+import BVButton from './BVButton'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    BVButton,
+  },
   props: {
     msg: String
   }
